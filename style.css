@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1500px;
+  background: black;
+}
+.main {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card {
+  transform-style: preserve-3d;
+  min-height: 50vh;
+  max-height: 1000px;
+  width: 38rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  background: white;
+  box-shadow: 0 20px 20px rgba(1, 255, 255, 0.5), 0px 0px 50px rgba(0, 225, 255, 0.5);
+}
+
+.earth {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.earth img {
+  width: 15rem;
+  z-index: 2;
+  transition: all 0.75s ease-out,opacity .9s ease ;
+  opacity: 1;
+  
+}
+
+.earth img:hover{
+  opacity: 0;
+}
+
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  background:  rgba(0, 0, 0, 1);
+   border: 10px solid rgb(0, 0, 0);
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+
+}
+
+.text{ position: absolute;
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  transition: all .75s;
+  color: rgb(255, 255, 255);
+}
+.control input{
+  position: relative;
+  top: 0px;
+  width: 100%;
+  display: block;
+  padding: 6px;
+  color: #222;
+  border: none;
+  outline: none;
+  margin: 1em 0;
+ background-color: rgb(238, 238, 238);
+border-radius: 20px;
+}
+
+
+
+.parent h1 {
+  position: relative;
+  font-size: 2rem;
+  transition: all 0.75s ease-out;
+  color: rgb(0, 0, 0);
+  top: 0px;
+  background: rgb(1, 255, 255);
+  text-align: center;
+  border-radius: 30px;
+}
+.parent h3 {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+.gender {position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  transition: all 0.75s ease-out;
+  
+}
+.gender button {
+  padding: 0.5rem 3rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+  outline: none;
+  justify-content: space-between;
+}
+button.active {
+  background: #585858;
+  color: white;
+  
+}
+.submit {
+  margin-top: 2rem;
+  transition: all 0.75s ease-out;
+}
+.submit button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: rgb(1, 255, 255);
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: all 1s ease;
+  border: none;
+  outline: none;
+  font-size: 32px;
+}
+.submit button:hover{
+  border-radius: 30px;
+}
